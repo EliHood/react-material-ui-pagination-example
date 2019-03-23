@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 0px 20px;
 }
 
 .App-logo {
@@ -7,7 +8,9 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.text-center{
+  text-align: center;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
