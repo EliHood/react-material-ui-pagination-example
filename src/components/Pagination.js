@@ -165,9 +165,9 @@ class Pagination extends Component{
             <TablePagination
                 rowsPerPageOptions={[5, 10, 25]}
                 component="div"
-                count={pager.pages.length}
+                count={pager.totalPages}
                 rowsPerPage={10}
-                page={() => this.setPage(pager.currentPage - 1)}
+                page={0}
                 backIconButtonProps={{
                     'aria-label': 'Previous Page',
                 }}
@@ -175,7 +175,7 @@ class Pagination extends Component{
                     'aria-label': 'Next Page',
                 }}
                 onChangePage={() => this.setPage(pager.currentPage + 1)}
-                // onChangeRowsPerPage={() => this.setPage(pager.totalPages)}
+                onChangeRowsPerPage={() => this.setPage(pager.currentPage)}
             />
 
         );
