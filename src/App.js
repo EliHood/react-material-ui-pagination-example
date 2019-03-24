@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Pagination from './components/Pagination';
 import OurTable from './components/Table';
@@ -43,7 +42,7 @@ class App extends Component {
           <OurTable items={this.state.pageOfItems} />
 
           <Pagination items={this.state.exampleItems} onPageChange={this.onPageChange} />
-          
+     
             
           </div>
 
